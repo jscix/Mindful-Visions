@@ -55,7 +55,7 @@ namespace WindowsFormsApplication1
 
         private void loadActiveSounds()
         {
-            string directoryPath = new General().SoundsPath() + "fsdfsdfdsf";
+            string directoryPath = new General().SoundsPath();
 
             string[] soundFilesList = Directory.GetFiles(directoryPath);
 
