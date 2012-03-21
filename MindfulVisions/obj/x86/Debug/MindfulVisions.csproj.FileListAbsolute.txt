@@ -1,0 +1,23 @@
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\MindfulVisions.exe
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\MindfulVisions.pdb
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\MindfulVisions.exe
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\MindfulVisions.pdb
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.Configuration.resources
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\MindfulVisions.exe.config
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.About.resources
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\MindfulVisions.exe.manifest
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\MindfulVisions.application
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\MindfulVisions.exe.manifest
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\MindfulVisions.application
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\Tips.txt
+C:\Users\Jesse\documents\visual studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Debug\WindowsFormsApplication1.debugger.resources
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\Sounds\bowl-struck.wav
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\Sounds\ohm.wav
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\Sounds\zen bell.wav
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Debug\Sounds\zen gong.wav
