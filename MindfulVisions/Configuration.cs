@@ -49,13 +49,13 @@ namespace WindowsFormsApplication1
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message).Show();
+                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
         private void loadActiveSounds()
         {
-            string directoryPath = new General().SoundsPath();
+            string directoryPath = new General().SoundsPath() + "fsdfsdfdsf";
 
             string[] soundFilesList = Directory.GetFiles(directoryPath);
 
@@ -116,7 +116,7 @@ namespace WindowsFormsApplication1
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message).Show();
+                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
@@ -198,7 +198,7 @@ namespace WindowsFormsApplication1
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message).Show();
+                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
@@ -220,7 +220,7 @@ namespace WindowsFormsApplication1
                         }
                         catch (Exception err)
                         {
-                            new debugger(err.GetType().ToString(), err.Message).Show();
+                            new debugger(err.GetType().ToString(), err.Message, err.StackTrace).Show();
                         }
                     }
                 }

@@ -52,7 +52,7 @@ namespace WindowsFormsApplication1
                 }
                 catch (Exception x)
                 {
-                    new debugger(x.GetType().ToString(), x.Message).Show();
+                    new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
                 }
             }
 
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication1
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message).Show();
+                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 

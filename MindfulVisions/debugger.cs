@@ -6,11 +6,12 @@ namespace WindowsFormsApplication1
 {
     public partial class debugger : Form
     {
-        public debugger(string errorType, string errorMessage)
+        public debugger(string errorType, string errorMessage, string stackTrace)
         {
             InitializeComponent();
             richTextBox1.Text = "Type of error: " + errorType + Environment.NewLine;
-            richTextBox1.Text += "Error contents: " + errorMessage;
+            richTextBox1.Text += "Error contents: " + errorMessage + Environment.NewLine;
+            richTextBox1.Text += "Stack Trace:" + Environment.NewLine + stackTrace;
         }
 
         private void debugger_Load(object sender, EventArgs e)
