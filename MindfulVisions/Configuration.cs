@@ -174,6 +174,7 @@ namespace WindowsFormsApplication1
             {
                 openFileDialog1.Filter = "Wave Files (*.wav)|*.wav";
                 openFileDialog1.FilterIndex = 1;
+                openFileDialog1.InitialDirectory = new General().SoundsPath();
 
                 if (Directory.Exists(new General().SoundsPath()) == false)
                     Directory.CreateDirectory(new General().SoundsPath());
