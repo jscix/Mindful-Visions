@@ -23,11 +23,15 @@ namespace WindowsFormsApplication1
             {
                 loadActiveSounds();
 
-                StringCollection activeSounds = Settings.Default.Sounds;
 
-                foreach (ListViewItem soundFile in listView1.Items.Cast<ListViewItem>().Where(soundFile => activeSounds.Contains(soundFile.Text)))
+                if (Settings.Default.Sounds != null)
                 {
-                    soundFile.Checked = true;
+                    StringCollection activeSounds = Settings.Default.Sounds;
+
+                    foreach (ListViewItem soundFile in listView1.Items.Cast<ListViewItem>().Where(soundFile => activeSounds.Contains(soundFile.Text)))
+                    {
+                        soundFile.Checked = true;
+                    }
                 }
 
                 if (Settings.Default.useSound)
