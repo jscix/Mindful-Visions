@@ -9,9 +9,9 @@ namespace WindowsFormsApplication1
 {
     public partial class Configuration : Form
     {
-        public Form1 Form1Reference;
+        public MindfulVisions Form1Reference;
 
-        public Configuration(Form1 form)
+        public Configuration(MindfulVisions form)
         {
             InitializeComponent();
             Form1Reference = form;
@@ -23,7 +23,6 @@ namespace WindowsFormsApplication1
             {
                 loadActiveSounds();
 
-
                 if (Settings.Default.Sounds != null)
                 {
                     StringCollection activeSounds = Settings.Default.Sounds;
@@ -34,22 +33,12 @@ namespace WindowsFormsApplication1
                     }
                 }
 
-                if (Settings.Default.useSound)
-                {
-                    checkBox2.Checked = true;
-                }
-                else
-                    checkBox2.Checked = false;
+                checkBox2.Checked = Settings.Default.useSound;
 
                 comboBox1.SelectedIndex = comboBox1.Items.IndexOf(Settings.Default.mindfulnessDelay);
                 comboBox2.SelectedIndex = comboBox2.Items.IndexOf(Settings.Default.mindfulnessLiveTime);
 
-                if (Settings.Default.screenDimmer)
-                {
-                    checkBox1.CheckState = CheckState.Checked;
-                }
-                else
-                    checkBox1.CheckState = CheckState.Unchecked;
+                checkBox1.CheckState = Settings.Default.screenDimmer ? CheckState.Checked : CheckState.Unchecked;
             }
             catch (Exception x)
             {
@@ -76,24 +65,10 @@ namespace WindowsFormsApplication1
             {
                 if (validateConfigSettings())
                 {
-                    if (checkBox2.Checked)
-                    {
-                        Settings.Default.useSound = true;
-                    }
-                    else
-                        Settings.Default.useSound = false;
-
+                    Settings.Default.useSound = checkBox2.Checked;
                     Settings.Default.mindfulnessDelay = comboBox1.Text;
                     Settings.Default.mindfulnessLiveTime = comboBox2.Text;
-
-                    Form1Reference.timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000);
-
-                    if (checkBox1.CheckState == CheckState.Checked)
-                    {
-                        Settings.Default.screenDimmer = true;
-                    }
-                    else
-                        Settings.Default.screenDimmer = false;
+                    Settings.Default.screenDimmer = checkBox1.CheckState == CheckState.Checked;
 
                     var activeSounds = new string[listView1.Items.Count];
 
@@ -114,7 +89,10 @@ namespace WindowsFormsApplication1
 
                     Settings.Default.Save();
                     Settings.Default.Upgrade();
+
+                    Form1Reference.timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay) * 60000);
                     Form1Reference.timer1.Enabled = true;
+
                     Close();
                 }
             }

@@ -8,13 +8,13 @@ using WindowsFormsApplication1.Properties;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form2 : Form
+    public partial class MindfulessWindow : Form
     {
         private readonly Dimmer _screen = new Dimmer();
-        public Form1 DimmingWindow; // reference to form1
+        public MindfulVisions DimmingWindow; // reference to form1
         public Timer RefTimer; // reference to timer1, on form1
 
-        public Form2(ref Timer timer, Form1 refForm)
+        public MindfulessWindow(ref Timer timer, MindfulVisions refForm)
         {
             InitializeComponent();
             RefTimer = timer;

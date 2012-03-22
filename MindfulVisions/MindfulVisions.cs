@@ -5,11 +5,11 @@ using WindowsFormsApplication1.Properties;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class MindfulVisions : Form
     {
         private bool _appStateActive;
 
-        public Form1()
+        public MindfulVisions()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
 
         public void DisplayMindfulnessWindow()
         {
-            var mindfulnessWindow = new Form2(ref timer1, this);
+            var mindfulnessWindow = new MindfulessWindow(ref timer1, this);
             mindfulnessWindow.Visible = true;
             mindfulnessWindow.Show();
             timer1.Enabled = false;
@@ -41,10 +41,13 @@ namespace WindowsFormsApplication1
             ShowInTaskbar = false;
             IsActive = true;
 
-            // Probably first load time if settings are blank
+            // Probably first load if settings are blank
             if (Settings.Default.mindfulnessDelay == "" || Settings.Default.mindfulnessLiveTime == "" ||
                 Settings.Default.Sounds == null)
             {
+                Settings.Default.useSound = false;
+                Settings.Default.screenDimmer = false;
+                
                 var cfgWnd = new Configuration(this);
                 cfgWnd.Show();
                 timer1.Interval = (5*60000);
@@ -52,12 +55,9 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
+               // timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
+                timer1.Interval = (5000); // 60,000ms == 1 minute
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -102,6 +102,11 @@ namespace WindowsFormsApplication1
         private void testToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Process.Start("http://bawk.org/mindfulvisions/help/");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
