@@ -11,8 +11,8 @@ namespace MindfulVisions
     public partial class MindfulessWindow : Form
     {
         private readonly Dimmer _screen = new Dimmer();
-        public MindfulVisions DimmingWindow; // reference to form1
-        public Timer RefTimer; // reference to timer1, on form1
+        public MindfulVisions DimmingWindow; // reference to MindfulVisions
+        public Timer RefTimer; // reference to timer1, on MindfulVisions
 
         public MindfulessWindow(ref Timer timer, MindfulVisions refForm)
         {
