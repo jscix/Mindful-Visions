@@ -55,8 +55,7 @@ namespace MindfulVisions
             }
             else
             {
-               // timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
-                timer1.Interval = (5000); // 60,000ms == 1 minute
+                timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
             }
         }
 
