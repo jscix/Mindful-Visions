@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using System.Windows.Forms;
-using WindowsFormsApplication1.Properties;
+using MindfulVisions.Properties;
 
-namespace WindowsFormsApplication1
+namespace MindfulVisions
 {
     internal class General
     {
@@ -28,14 +29,7 @@ namespace WindowsFormsApplication1
 
         public bool ValidateSoundList(ListView list)
         {
-            foreach (ListViewItem item in list.Items)
-            {
-                if (item.Checked)
-                {
-                    return true;
-                }
-            }
-            return false;
+            return list.Items.Cast<ListViewItem>().Any(item => item.Checked);
         }
 
         public bool ValidateSoundList()

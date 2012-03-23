@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using WindowsFormsApplication1.Properties;
+using MindfulVisions.Properties;
 
-namespace WindowsFormsApplication1
+namespace MindfulVisions
 {
     public partial class MindfulVisions : Form
     {

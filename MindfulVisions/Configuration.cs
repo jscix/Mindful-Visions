@@ -3,18 +3,18 @@ using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using WindowsFormsApplication1.Properties;
+using MindfulVisions.Properties;
 
-namespace WindowsFormsApplication1
+namespace MindfulVisions
 {
     public partial class Configuration : Form
     {
-        public MindfulVisions Form1Reference;
+        public MindfulVisions MindfulVisionsReference;
 
         public Configuration(MindfulVisions form)
         {
             InitializeComponent();
-            Form1Reference = form;
+            MindfulVisionsReference = form;
         }
 
         private void Configuration_Load(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -90,8 +90,8 @@ namespace WindowsFormsApplication1
                     Settings.Default.Save();
                     Settings.Default.Upgrade();
 
-                    Form1Reference.timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay) * 60000);
-                    Form1Reference.timer1.Enabled = true;
+                    MindfulVisionsReference.timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay) * 60000);
+                    MindfulVisionsReference.timer1.Enabled = true;
 
                     Close();
                 }

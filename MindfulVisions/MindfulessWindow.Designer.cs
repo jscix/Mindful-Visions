@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace MindfulVisions
 {
     partial class MindfulessWindow
     {

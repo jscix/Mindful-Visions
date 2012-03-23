@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Media;
 using System.Windows.Forms;
-using WindowsFormsApplication1.Properties;
+using MindfulVisions.Properties;
 
-namespace WindowsFormsApplication1
+namespace MindfulVisions
 {
     public partial class MindfulessWindow : Form
     {
