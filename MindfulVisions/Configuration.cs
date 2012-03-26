@@ -36,9 +36,12 @@ namespace MindfulVisions
                 checkBox1.CheckState = Settings.Default.screenDimmer ? CheckState.Checked : CheckState.Unchecked;
                 checkBox2.Checked = Settings.Default.useSound;
 
-                comboBox1.SelectedIndex = comboBox1.Items.IndexOf(Settings.Default.mindfulnessDelay);
-                comboBox2.SelectedIndex = comboBox2.Items.IndexOf(Settings.Default.mindfulnessLiveTime);
+                label7.Text = Settings.Default.mindfulnessDelay;
+                label8.Text = (0.5 * Convert.ToDouble(Settings.Default.mindfulnessLiveTime)).ToString();
 
+                trackBar1.Value = Convert.ToInt32(Settings.Default.mindfulnessDelay);
+                trackBar2.Value = Convert.ToInt32(Settings.Default.mindfulnessLiveTime);
+                
                 
             }
             catch (Exception x)
@@ -64,11 +67,11 @@ namespace MindfulVisions
         {
             try
             {
-                if (validateConfigSettings())
+                if (ValidateConfigSettings())
                 {
                     Settings.Default.useSound = checkBox2.Checked;
-                    Settings.Default.mindfulnessDelay = comboBox1.Text;
-                    Settings.Default.mindfulnessLiveTime = comboBox2.Text;
+                    Settings.Default.mindfulnessDelay = trackBar1.Value.ToString(); //comboBox1.Text;
+                    Settings.Default.mindfulnessLiveTime = trackBar2.Value.ToString(); //comboBox2.Text;
                     Settings.Default.screenDimmer = checkBox1.CheckState == CheckState.Checked;
 
                     var activeSounds = new string[listView1.Items.Count];
@@ -103,9 +106,9 @@ namespace MindfulVisions
             }
         }
 
-        private bool validateConfigSettings()
+        private bool ValidateConfigSettings()
         {
-            if (comboBox1.Text == "" || comboBox2.Text == "")
+            if (trackBar2.Value == 0 || trackBar1.Value == 0)
             {
                 MessageBox.Show(
                     "Please select how often and for how long you would like your mindfulness reminder to be displayed.",
@@ -130,7 +133,7 @@ namespace MindfulVisions
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "" || comboBox2.Text == "")
+            if (trackBar2.Value == 0 || trackBar1.Value == 0)
             {
                 MessageBox.Show(
                     "Please select how often and for how long you would like your mindfulness reminder to be displayed.",
@@ -208,6 +211,16 @@ namespace MindfulVisions
                     }
                 }
             }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label7.Text = trackBar1.Value.ToString();
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            label8.Text = Convert.ToDouble(0.5 * trackBar2.Value).ToString();
         }
     }
 }

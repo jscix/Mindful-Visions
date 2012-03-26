@@ -23,8 +23,8 @@ namespace MindfulVisions
 
         private void Form2_Load(object sender, EventArgs e)
         {
-           // if (Settings.Default.screenDimmer) _screen.Dim(DimmingWindow);
-            timer1.Interval = int.Parse("" + (double.Parse(Settings.Default.mindfulnessLiveTime)*60000)); // 60,000ms == 1 minute
+            if (Settings.Default.screenDimmer) _screen.Dim();
+            timer1.Interval = int.Parse("" + ( 0.5 * double.Parse(Settings.Default.mindfulnessLiveTime)) *60000); // 60,000ms == 1 minute
             timer1.Enabled = true;
 
             if (Settings.Default.useSound && new General().ValidateSoundList())
@@ -47,8 +47,7 @@ namespace MindfulVisions
                         }
                     } while (rndSound == null);
 
-                    var soundPlayer = new SoundPlayer();
-                    soundPlayer.SoundLocation = rndSound;
+                    var soundPlayer = new SoundPlayer {SoundLocation = rndSound};
                     soundPlayer.Play();
                 }
                 catch (Exception x)
@@ -70,7 +69,7 @@ namespace MindfulVisions
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (Settings.Default.screenDimmer) _screen.RemoveDim(DimmingWindow);
+            if (Settings.Default.screenDimmer) _screen.RemoveDim();
             RefTimer.Enabled = true;
             timer1.Enabled = false;
         }

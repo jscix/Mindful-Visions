@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 using MindfulVisions.Properties;
 
@@ -29,16 +30,13 @@ namespace MindfulVisions
 
         public void DisplayMindfulnessWindow()
         {
-            var mindfulnessWindow = new MindfulessWindow(ref timer1, this);
-            mindfulnessWindow.Visible = true;
+            var mindfulnessWindow = new MindfulessWindow(ref timer1, this) {Visible = true};
             mindfulnessWindow.Show();
             timer1.Enabled = false;
         }
 
         protected override void OnLoad(EventArgs e)
         {
-            new Dimmer().test();
-
             Visible = false;
             ShowInTaskbar = false;
             IsActive = true;
@@ -47,6 +45,8 @@ namespace MindfulVisions
             if (Settings.Default.mindfulnessDelay == "" || Settings.Default.mindfulnessLiveTime == "" ||
                 Settings.Default.Sounds == null)
             {
+                Settings.Default.mindfulnessDelay = "3";
+                Settings.Default.mindfulnessLiveTime = "1";
                 Settings.Default.useSound = false;
                 Settings.Default.screenDimmer = false;
                 
@@ -57,7 +57,8 @@ namespace MindfulVisions
             }
             else
             {
-                timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
+               // timer1.Interval = (short.Parse(Settings.Default.mindfulnessDelay)*60000); // 60,000ms == 1 minute
+                 timer1.Interval = (10000);  // For testing
             }
         }
 

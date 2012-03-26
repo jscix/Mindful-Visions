@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MindfulVisions.exe" size="124928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MindfulVisions.exe" size="124416">
       <assemblyIdentity name="MindfulVisions" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ukEQZLf6mQWGDwb0mpRdQd0n9ds=</dsig:DigestValue>
+        <dsig:DigestValue>jbCtBC8El7moxodbBH9rFf9kgbM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -107,13 +107,13 @@
       <dsig:DigestValue>PQ7qu7dkqsR7uYCq1naPPsQmXxk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Tips.txt" size="3740">
+  <file name="Tips.txt" size="3618">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>WnOh5C57m+kinb04628/A6xxD/s=</dsig:DigestValue>
+      <dsig:DigestValue>qKrNptFJlrGXB62VB84aePlx4vI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
