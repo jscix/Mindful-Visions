@@ -37,6 +37,8 @@ namespace MindfulVisions
 
         protected override void OnLoad(EventArgs e)
         {
+            new Dimmer().test();
+
             Visible = false;
             ShowInTaskbar = false;
             IsActive = true;
@@ -105,7 +107,7 @@ namespace MindfulVisions
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

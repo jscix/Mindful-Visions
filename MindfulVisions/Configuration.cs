@@ -33,12 +33,13 @@ namespace MindfulVisions
                     }
                 }
 
+                checkBox1.CheckState = Settings.Default.screenDimmer ? CheckState.Checked : CheckState.Unchecked;
                 checkBox2.Checked = Settings.Default.useSound;
 
                 comboBox1.SelectedIndex = comboBox1.Items.IndexOf(Settings.Default.mindfulnessDelay);
                 comboBox2.SelectedIndex = comboBox2.Items.IndexOf(Settings.Default.mindfulnessLiveTime);
 
-                checkBox1.CheckState = Settings.Default.screenDimmer ? CheckState.Checked : CheckState.Unchecked;
+                
             }
             catch (Exception x)
             {

@@ -23,7 +23,7 @@ namespace MindfulVisions
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            if (Settings.Default.screenDimmer) _screen.Dim(DimmingWindow);
+           // if (Settings.Default.screenDimmer) _screen.Dim(DimmingWindow);
             timer1.Interval = int.Parse("" + (double.Parse(Settings.Default.mindfulnessLiveTime)*60000)); // 60,000ms == 1 minute
             timer1.Enabled = true;
 
@@ -46,6 +46,7 @@ namespace MindfulVisions
                             rndSound = filePaths[rndNum];
                         }
                     } while (rndSound == null);
+
                     var soundPlayer = new SoundPlayer();
                     soundPlayer.SoundLocation = rndSound;
                     soundPlayer.Play();
