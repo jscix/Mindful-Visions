@@ -27,11 +27,11 @@ namespace MindfulVisions
             timer1.Interval = int.Parse("" + ( 0.5 * double.Parse(Settings.Default.mindfulnessLiveTime)) *60000); // 60,000ms == 1 minute
             timer1.Enabled = true;
 
-            if (Settings.Default.useSound && new General().ValidateSoundList())
+            if (Settings.Default.useSound && new Sounds().ValidateSoundList())
             {
                 try
                 {
-                    string[] filePaths = Directory.GetFiles(new General().SoundsPath());
+                    string[] filePaths = Directory.GetFiles(new ApplicationPaths().SoundDirectory());
                     StringCollection userSounds = Settings.Default.Sounds;
 
                     string rndSound = null;
@@ -58,7 +58,7 @@ namespace MindfulVisions
 
             try
             {
-                string[] textFile = File.ReadAllLines(new General().ApplicationPath() + @"\Tips.txt");
+                string[] textFile = File.ReadAllLines(new ApplicationPaths().RootDirectory() + @"\Tips.txt");
                 Tip.Text = textFile[new Random().Next(textFile.Length)];
             }
             catch (Exception x)

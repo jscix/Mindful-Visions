@@ -8,5 +8,10 @@ namespace MindfulVisions
         {
             InitializeComponent();
         }
+
+        private void dimmerWindow_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

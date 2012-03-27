@@ -52,7 +52,7 @@ namespace MindfulVisions
 
         private void loadActiveSounds()
         {
-            string directoryPath = new General().SoundsPath();
+            string directoryPath = new ApplicationPaths().SoundDirectory();
 
             string[] soundFilesList = Directory.GetFiles(directoryPath);
 
@@ -121,7 +121,7 @@ namespace MindfulVisions
                                 "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if (checkBox2.Checked && new General().ValidateSoundList(listView1) == false)
+            if (checkBox2.Checked && new Sounds().ValidateSoundList(listView1) == false)
             {
                 MessageBox.Show(
                     "Please select the Sound tab, and uncheck the Use Sounds option, or select at least one sound to use.",
@@ -144,7 +144,7 @@ namespace MindfulVisions
                 MessageBox.Show("Please select the Sound tab, and mark the checkbox.",
                                 "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (checkBox2.Checked && new General().ValidateSoundList(listView1) == false)
+            else if (checkBox2.Checked && new Sounds().ValidateSoundList(listView1) == false)
             {
                 MessageBox.Show(
                     "Please select the Sound tab, and uncheck the Use Sounds option, or select at least one sound to use.",
@@ -160,19 +160,19 @@ namespace MindfulVisions
             {
                 openFileDialog1.Filter = "Wave Files (*.wav)|*.wav";
                 openFileDialog1.FilterIndex = 1;
-                openFileDialog1.InitialDirectory = new General().SoundsPath();
+                openFileDialog1.InitialDirectory = new ApplicationPaths().SoundDirectory();
 
-                if (Directory.Exists(new General().SoundsPath()) == false)
-                    Directory.CreateDirectory(new General().SoundsPath());
+                if (Directory.Exists(new ApplicationPaths().SoundDirectory()) == false)
+                    Directory.CreateDirectory(new ApplicationPaths().SoundDirectory());
 
                 if (openFileDialog1.ShowDialog() == DialogResult.OK &&
-                    File.Exists(new General().SoundsPath() + openFileDialog1.FileName.Split('\\').Last()) == false)
+                    File.Exists(new ApplicationPaths().SoundDirectory() + openFileDialog1.FileName.Split('\\').Last()) == false)
                 {
                     File.Copy(openFileDialog1.FileName,
-                              new General().SoundsPath() + openFileDialog1.FileName.Split('\\').Last());
+                              new ApplicationPaths().SoundDirectory() + openFileDialog1.FileName.Split('\\').Last());
 
                     listView1.Clear();
-                    string directoryPath = new General().SoundsPath();
+                    string directoryPath = new ApplicationPaths().SoundDirectory();
                     string[] filePaths = Directory.GetFiles(directoryPath);
 
                     foreach (string soundPath in filePaths)
@@ -201,7 +201,7 @@ namespace MindfulVisions
                     {
                         try
                         {
-                            File.Delete(new General().SoundsPath() + lstItem.Text);
+                            File.Delete(new ApplicationPaths().SoundDirectory() + lstItem.Text);
                             listView1.Items.Remove(lstItem);
                         }
                         catch (Exception err)
