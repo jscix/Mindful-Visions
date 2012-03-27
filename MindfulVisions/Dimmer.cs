@@ -8,13 +8,13 @@ namespace MindfulVisions
 {
     internal class Dimmer
     {
-        private readonly List<dimmerWindow> _dimmerWindows = new List<dimmerWindow>();
+        private readonly List<DimmerWindow> _dimmerWindows = new List<DimmerWindow>();
 
         public void Dim()
         {
             foreach (Screen monitor in Screen.AllScreens)
             {
-                dimmerWindow window = new dimmerWindow {
+                DimmerWindow window = new DimmerWindow {
                                                     BackColor = Color.Black,
                                                     Opacity = .8,
                                                     FormBorderStyle = FormBorderStyle.None,

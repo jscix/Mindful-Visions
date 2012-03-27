@@ -52,7 +52,7 @@ namespace MindfulVisions
                 }
                 catch (Exception x)
                 {
-                    new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+                    new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
                 }
             }
 
@@ -63,7 +63,7 @@ namespace MindfulVisions
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+                new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 

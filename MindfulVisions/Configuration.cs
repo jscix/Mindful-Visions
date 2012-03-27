@@ -46,7 +46,7 @@ namespace MindfulVisions
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+                new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
@@ -70,8 +70,8 @@ namespace MindfulVisions
                 if (ValidateConfigSettings())
                 {
                     Settings.Default.useSound = checkBox2.Checked;
-                    Settings.Default.mindfulnessDelay = trackBar1.Value.ToString(); //comboBox1.Text;
-                    Settings.Default.mindfulnessLiveTime = trackBar2.Value.ToString(); //comboBox2.Text;
+                    Settings.Default.mindfulnessDelay = trackBar1.Value.ToString();
+                    Settings.Default.mindfulnessLiveTime = trackBar2.Value.ToString();
                     Settings.Default.screenDimmer = checkBox1.CheckState == CheckState.Checked;
 
                     var activeSounds = new string[listView1.Items.Count];
@@ -102,7 +102,7 @@ namespace MindfulVisions
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+                new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
@@ -184,7 +184,7 @@ namespace MindfulVisions
             }
             catch (Exception x)
             {
-                new debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+                new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
             }
         }
 
@@ -206,7 +206,7 @@ namespace MindfulVisions
                         }
                         catch (Exception err)
                         {
-                            new debugger(err.GetType().ToString(), err.Message, err.StackTrace).Show();
+                            new Debugger(err.GetType().ToString(), err.Message, err.StackTrace).Show();
                         }
                     }
                 }

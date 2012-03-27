@@ -89,18 +89,18 @@
     <Compile Include="Configuration.Designer.cs">
       <DependentUpon>Configuration.cs</DependentUpon>
     </Compile>
-    <Compile Include="debugger.cs">
+    <Compile Include="Debugger.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="debugger.Designer.cs">
-      <DependentUpon>debugger.cs</DependentUpon>
+    <Compile Include="Debugger.Designer.cs">
+      <DependentUpon>Debugger.cs</DependentUpon>
     </Compile>
     <Compile Include="Dimmer.cs" />
-    <Compile Include="dimmerWindow.cs">
+    <Compile Include="DimmerWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dimmerWindow.Designer.cs">
-      <DependentUpon>dimmerWindow.cs</DependentUpon>
+    <Compile Include="DimmerWindow.Designer.cs">
+      <DependentUpon>DimmerWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="MindfulVisions.cs">
       <SubType>Form</SubType>
@@ -127,11 +127,11 @@
       <DependentUpon>Configuration.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="debugger.resx">
-      <DependentUpon>debugger.cs</DependentUpon>
+    <EmbeddedResource Include="Debugger.resx">
+      <DependentUpon>Debugger.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dimmerWindow.resx">
-      <DependentUpon>dimmerWindow.cs</DependentUpon>
+    <EmbeddedResource Include="DimmerWindow.resx">
+      <DependentUpon>DimmerWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MindfulVisions.resx">
       <DependentUpon>MindfulVisions.cs</DependentUpon>

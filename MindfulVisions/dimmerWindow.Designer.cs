@@ -1,6 +1,6 @@
 ﻿namespace MindfulVisions
 {
-    partial class dimmerWindow
+    partial class DimmerWindow
     {
         /// <summary>
         /// Required designer variable.

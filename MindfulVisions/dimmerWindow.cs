@@ -2,9 +2,9 @@
 
 namespace MindfulVisions
 {
-    public partial class dimmerWindow : Form
+    public partial class DimmerWindow : Form
     {
-        public dimmerWindow()
+        public DimmerWindow()
         {
             InitializeComponent();
         }

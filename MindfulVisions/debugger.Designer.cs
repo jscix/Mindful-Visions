@@ -1,6 +1,6 @@
 ﻿namespace MindfulVisions
 {
-    partial class debugger
+    partial class Debugger
     {
         /// <summary>
         /// Required designer variable.

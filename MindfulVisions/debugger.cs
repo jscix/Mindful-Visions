@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace MindfulVisions
 {
-    public partial class debugger : Form
+    public partial class Debugger : Form
     {
-        public debugger(string errorType, string errorMessage, string stackTrace)
+        public Debugger(string errorType, string errorMessage, string stackTrace)
         {
             InitializeComponent();
             richTextBox1.Text = "Type of error: " + errorType + Environment.NewLine;
