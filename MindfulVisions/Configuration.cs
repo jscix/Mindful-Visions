@@ -119,6 +119,7 @@ namespace MindfulVisions
             {
                 MessageBox.Show("Please select the Sound tab, and mark the checkbox.",
                                 "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                tabControl1.TabIndex = 2;
                 return false;
             }
             if (checkBox2.Checked && new Sounds().ValidateSoundList(listView1) == false)
@@ -133,25 +134,10 @@ namespace MindfulVisions
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (trackBar2.Value == 0 || trackBar1.Value == 0)
-            {
-                MessageBox.Show(
-                    "Please select how often and for how long you would like your mindfulness reminder to be displayed.",
-                    "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (checkBox2.CheckState == CheckState.Indeterminate)
-            {
-                MessageBox.Show("Please select the Sound tab, and mark the checkbox.",
-                                "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (checkBox2.Checked && new Sounds().ValidateSoundList(listView1) == false)
-            {
-                MessageBox.Show(
-                    "Please select the Sound tab, and uncheck the Use Sounds option, or select at least one sound to use.",
-                    "You need to choose some options.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            if (ValidateConfigSettings()) {
                 Close();
+            }
+                
         }
 
         private void button3_Click(object sender, EventArgs e)

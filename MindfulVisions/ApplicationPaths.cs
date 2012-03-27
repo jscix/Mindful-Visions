@@ -22,7 +22,7 @@
 
         private bool isDebugMode()
         {
-            return Debugger.IsAttached;
+            return System.Diagnostics.Debugger.IsAttached;
         }
     }
 }
