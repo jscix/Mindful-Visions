@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MindfulVisions.exe" size="124416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MindfulVisions.exe" size="151552">
       <assemblyIdentity name="MindfulVisions" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>j9BvQygBOZ7WFajxkbXiSPJp6ow=</dsig:DigestValue>
+        <dsig:DigestValue>IGJCCrCjz3vS50uNvSNolKCryqo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

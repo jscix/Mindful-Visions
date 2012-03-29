@@ -41,7 +41,6 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,7 +53,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
@@ -140,11 +138,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.listView1);
+            this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.checkBox2);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -169,21 +168,22 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(276, 10);
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.Color.Black;
+            this.checkBox2.Location = new System.Drawing.Point(275, 89);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.Size = new System.Drawing.Size(88, 19);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Play Sound";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(276, 40);
+            this.label6.Location = new System.Drawing.Point(275, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 32);
+            this.label6.Size = new System.Drawing.Size(88, 34);
             this.label6.TabIndex = 3;
             this.label6.Text = "Add or Remove sounds here.";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
             // 
@@ -194,22 +194,11 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Select the sounds you wish to use for sessions";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Location = new System.Drawing.Point(276, 69);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(92, 42);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(49, 13);
+            this.button4.Location = new System.Drawing.Point(318, 27);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(37, 20);
+            this.button4.Size = new System.Drawing.Size(37, 22);
             this.button4.TabIndex = 1;
             this.button4.Text = "-";
             this.button4.UseVisualStyleBackColor = true;
@@ -217,9 +206,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 13);
+            this.button3.Location = new System.Drawing.Point(278, 27);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(37, 20);
+            this.button3.Size = new System.Drawing.Size(37, 22);
             this.button3.TabIndex = 0;
             this.button3.Text = "+";
             this.button3.UseVisualStyleBackColor = true;
@@ -311,7 +300,6 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
@@ -328,7 +316,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
