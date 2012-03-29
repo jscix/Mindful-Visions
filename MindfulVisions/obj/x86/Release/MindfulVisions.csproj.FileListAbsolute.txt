@@ -22,3 +22,12 @@ C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisio
 C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Release\MindfulVisions.MindfulVisions.resources
 C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Release\MindfulVisions.MindfulessWindow.resources
 C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\obj\x86\Release\MindfulVisions.Properties.Resources.resources
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\flowers.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\galaxy.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\lake.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\meditation.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\mountains.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\rockand.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\stonesand.jpg
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\sunset.png
+C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\tree.jpg

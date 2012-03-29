@@ -163,15 +163,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\flowers.jpg" />
-    <Content Include="Images\galaxy.jpg" />
-    <Content Include="Images\lake.jpg" />
-    <Content Include="Images\meditation.jpg" />
-    <Content Include="Images\mountains.jpg" />
-    <Content Include="Images\rockand.jpg" />
-    <Content Include="Images\stonesand.jpg" />
-    <Content Include="Images\sunset.png" />
-    <Content Include="Images\tree.jpg" />
+    <Content Include="Images\flowers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\galaxy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\lake.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\meditation.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\mountains.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\rockand.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\stonesand.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\sunset.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tree.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Sounds\bowl-struck.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

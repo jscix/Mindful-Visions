@@ -38,6 +38,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 Source: "C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\MindfulVisions.exe"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
 Source: "C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Tips.txt"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-modify
 Source: "C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Sounds\*"; DestDir: "{app}\Sounds"; Flags:recursesubdirs createallsubdirs; Permissions: users-modify
+Source: "C:\Users\Jesse\Documents\Visual Studio 2010\Projects\MindfulVisions\MindfulVisions\bin\Release\Images\*"; DestDir: "{app}\Images"; Flags:recursesubdirs createallsubdirs; Permissions: users-modify
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

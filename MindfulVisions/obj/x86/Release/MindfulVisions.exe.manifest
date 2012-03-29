@@ -49,10 +49,64 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8wCtTSv660g1OBXw+vbeVrL9Kmk=</dsig:DigestValue>
+        <dsig:DigestValue>sVFN1sOINzl6lPeNdsqzd6/GapM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Images\flowers.jpg" size="64624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8P+3lBt+1/Whfwe+URJJfhWVM9w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\galaxy.jpg" size="303316">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OCLfdtBISwcl5EFySqdkiBO6Z9U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\lake.jpg" size="182868">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RYgqmyqB/8UYBc9bgR7DxqLd9TU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\meditation.jpg" size="26232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FWA0Wj6VBluKMsEN5XqmplVjp/8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\mountains.jpg" size="112593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FLIaatW/UwqV/5qy6eUXsqNkpUk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\rockand.jpg" size="269023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2lI2MIKVqpH0PYB4A7ugIuWu0tA=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\stonesand.jpg" size="26475">
     <hash>
       <dsig:Transforms>
@@ -60,6 +114,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>ezx2Et8Cj6XfYLp+ZMajTxlv0E0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\sunset.png" size="386034">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EyM7va8wVkVCNSLZvMbrnnMwN0Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\tree.jpg" size="144263">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>D07aWqNsw4Rry3EIpHdC5uB9RGs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MindfulVisions.exe.config" size="957">
