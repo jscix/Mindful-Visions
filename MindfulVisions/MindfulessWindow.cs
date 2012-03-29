@@ -27,6 +27,16 @@ namespace MindfulVisions
             timer1.Interval = int.Parse("" + ( 0.5 * double.Parse(Settings.Default.mindfulnessLiveTime)) *60000); // 60,000ms == 1 minute
             timer1.Enabled = true;
 
+            try
+            {
+                this.pictureBox1.ImageLocation = new Images().PickRandomImage();
+                this.pictureBox1.Load();
+            }
+            catch (Exception x)
+            {
+                new Debugger(x.GetType().ToString(), x.Message, x.StackTrace).Show();
+            }
+
             if (Settings.Default.useSound && new Sounds().ValidateSoundList())
             {
                 try

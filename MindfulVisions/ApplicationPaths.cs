@@ -20,6 +20,16 @@
             return soundspath + @"\Sounds\";
         }
 
+        public string ImageDirectory()
+        {
+            string imagepaths = RootDirectory();
+            if (imagepaths.Substring((imagepaths.Length - 1), 1) == @"\")
+            {
+                return imagepaths + @"Images\";
+            }
+            return imagepaths + @"\Images\";
+        }
+
         private bool isDebugMode()
         {
             return System.Diagnostics.Debugger.IsAttached;
